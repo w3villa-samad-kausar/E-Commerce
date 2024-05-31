@@ -1,79 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="/assets/style.css">
+
+<title>Ecommerce</title>
 
 </head>
 <body>
-    <header class="header1">
-        <nav class="navbar">
-               <ul class="menu_items">
-                <li class="menu_item">
-                     <i class="fa-solid fa-house"></i>
-                     <a href="#" class="nav_link">Home</a>
-                     <i class="fa-solid fa-circle-user"></i>
-                     <a href="#" class="nav_link">About Us</a>
-                     <i class="fa-solid fa-envelope"></i>
-                     <a href="#" class="nav_link">Contact</a>
-                     <i class="fa-solid fa-question"></i>
-                     <a href="#" class="nav_link">FAQ</a>
+<header>
+<div class="topheader">
+    <div class="wrapper">
+        <div class="d-setBetween">
+            <ul>
+                <li><i class="fa fa-home"></i><a href=""> Home</a></li>
+                <li><i class="fa fa-user"></i><a href=""> About Us</a></li>
+                <li><i class="fa fa-envelope"></i><a href=""> Contact</a></li>
+                <li><i class="fa fa-question"></i><select name="" id=""><option value="" selected> FAQ</option></select></li>
+            </ul>
+            <ul>
+                <li><i class="fa fa-flag"></i><a href=""> Language</a></li>
+                <li><i class="fa fa-dollar"></i><a href=""> Currency</a></li>
+            </ul>
+            <ul>
+                <li><i class="fa fa-bars"></i><a href=""> More Menus's</a></li>
+                <li><i class="fa fa-shopping-cart"></i><a href=""> Delivery</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="midheader">
+    <div class="wrapper">
+        <div class="d-setBetween">
+            <div>
+                <h1>JOURNAL</h1>
+            </div>
+            <div>
+                <span>ALL</span>
+                <input type="text" placeholder="Search">
+                <span><i class="fa fa-search"></i></span>
+            </div>
+            <div>
+                <ul class="d-setBetween midHead_auth">
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-user"></i></div>
+                            <div>Login</div>
+                        </a>
                     </li>
-               </ul>
-                <ul class="menu_items">
-                    <li class="menu_item2">
-                        <select id="language-select">
-                            <option value="en" selected>English</option>
-                            <option value="fr">French</option>
-                            <option value="es">Spanish</option>
-                            <option value="de">German</option>
-                            <option value="it">Italian</option>
-                        </select>
-                        <select name="" id="currency">
-                            <option value="dol" selected>US Dollar</option>
-                            <option value="rs" >Indian Rupees</option>
-                            <option value="euro" >Euro Pounds</option>  
-                        </select>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-user"></i></div>
+                            <div>Register</div>
+                        </a>
                     </li>
-                </ul> 
-                <ul class="menu_item">
-                    <li class="menu_item3">
-                        <i class="fa-solid fa-bars"></i>
-                        <select  id="menu_selection">
-                            <option value="more" selected>More Menus</option>
-                        </select>
-                        <i class="fa-solid fa-truck"></i>
-                        <a href="#">Delivery</a>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-user"></i></div>
+                            <div>Wishlist</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-user"></i></div>
+                            <div>Compare</div>
+                        </a>
                     </li>
                 </ul>
-        </nav>
-    </header>
-    <header class="header2">
-        <div class="logo">
-            <img src="assets/logo.jpeg" alt="">
+            </div>
+        <div>
+            <div class="d-setBetween">
+                <div>3items - $ 20</div>
+                <div><i class="fa fa-shopping-cart"></i></div>
+            </div>
         </div>
-        <div class="search">
-            search bar
+    </div>
+    </div>
+</div>
+<div class="bottomheader">
+    <div class="wrapper">
+        <div class="d-setBetween">
+            <div class="d-setBetween">
+                <div class="bg-secondary bottomHead_inButton"><i class="fa fa-bars"></i>ALL DEPARTMENTS</div>
+            <div>
+                <ul class="d-setBetween bottomHead_menus">
+                    <li><a href="">MULTILEVEL</a></li>
+                    <li><a href="">MEGA MENU</a></li>
+                    <li><a href="">FULL WIDTH</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="d-setBetween gap-1">
+                <div><i class="fa fa-phone"></i>1234567890</div>
+                <div><i class="fa-solid fa-blog"></i><a href="" class="bottomHead_inButton">Blog</a></div>
+            </div>
         </div>
-        <div class="login">
-            <ul class="login_list">
-
-                <li class="login_item">Login</li>
-                <li class="login_item">Register</li>
-                <li class="login_item">Wishlist</li>
-                <li class="login_item">Compare</li>
-            </ul>
-        </div>
-        <div class="checkout">
-            <ul class="checkout_items">
-                <li class="total">00</li>
-                <li class="cart"></li>
-            </ul>
-        </div>
-    </header>
-    
+    </div>
+</div>
+</header> 
 </body>
 </html>

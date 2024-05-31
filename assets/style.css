@@ -1,48 +1,95 @@
-/* CSS Boilerplate */
-* {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    background-color: #f1f1f1;
 }
-
-a{
-    text-decoration: none;
+:root{
+    --bg-primary: #2651d6;
+    --bg-secondary: #fdd32f;
 }
-
-.header1 .navbar {
-    width: 100%;
-    margin: 0px 0px 0px 120px;
-    height: 30px;
-    background-color: aqua;
-    padding: 0%;
+.wrapper{
+    max-width: 1140px;
+    margin: auto;
+}
+.d-setBetween{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.gap-1{
+    gap: 10px;
+}
+
+.bg-secondary{
+    background-color: var(--bg-secondary);
+}
+.text-white{
+    color: white;
+}
+
+/* header */
+
+header .topheader{
+    background-color: white;
+    padding: 15px 0;
+}
+
+header .topheader ul{
+    padding: 0;
+    margin: 0;
+}
+
+header .topheader ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+}
+
+header .topheader ul li a{
+    text-decoration: none;
+}
+
+header .midheader .midHead_auth{
+    margin: 0;
+    padding: 0;
+}
+
+header .midheader .midHead_auth li{
+    list-style-type: none;
+    width: 60px;
+    text-align: center;
+}
+header .midheader .midHead_auth li a{
+    text-decoration: none;
+    color: #111;
+
+}
+header .mideheader .midHead_auth li a i.fa{
+    font-size: 24px;
+}
+
+header .bottomheader{
+    background-color: var(--bg-primary);
+    color: white;
+}
+header .bottomheader .bottomHead_inButton{
+    display: inline-block;
+    padding: 10px 14px;
+    color: black;
+    background-color: var(--bg-secondary);
+}
+header .bottomheader .bottomHead_menus{
+    padding: 0;
+    margin: 0;
+}
+header .bottomheader .bottomHead_menus li{
+    list-style-type: none;
+    margin: 0 3px;
+}
+header .bottomheader .bottomHead_menus li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: white;
     
-}
-
-
-.header1 .navbar .menu_item{
-    background-color: red;
-    height: 30px;
-    list-style: none;
-    width: 650px;
-}
-
-.header1 .navbar .menu_item2{
-    background-color: yellow;
-    list-style: none;
-    height: 30px;
-    width: 600px;
-}
-
-.header1 .navbar .menu_item3{
-    background-color: green;
-    list-style: none;
-    height: 30px;
-    width: 600px;
-}
-.header2{
-    display: flex;
 }
