@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    font-family: "Roboto", sans-serif;
 }
 :root{
     --bg-primary: #2651d6;
@@ -92,4 +97,149 @@ header .bottomheader .bottomHead_menus li a{
     padding: 5px;
     color: white;
     
+}
+.topimages{
+    padding: 10px;
+}
+.carousel{
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-inner{
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease-in-out;
+    
+}
+.carousel-item{
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carousel-item img {
+    width: 800px;
+    display: block;
+    height: 500px;
+    border-radius: 20px;
+  }
+
+  .on-image{
+    position: absolute;
+    z-index: 101;
+
+  }
+  .on-image ul{
+    margin-top: 200px;
+    list-style-type: none;
+
+  }
+  .on-image ul li{
+    padding: 10px;
+  }
+
+
+  input[type="radio"]{
+    display: none;
+  }
+  
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+  }
+  
+  #slide2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
+  }
+
+  .carousel-controls{
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  .control{
+    width: 30px;
+    height: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+input#slide1:checked ~ .carousel-controls label[for="slide1"],
+input#slide2:checked ~ .carousel-controls label[for="slide2"],
+input#slide3:checked ~ .carousel-controls label[for="slide3"] {
+  background-color: orange;
+  opacity: 1;
+}
+
+
+
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+  .others{
+    padding: 10px;
+  }
+  .watch img{
+    width: 300px;
+    height: 236px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+  }
+  .computer img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    
+  }
+  .divider {
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.divider ul {
+    display: flex;
+    list-style-type: none;
+    padding: 250px;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.divider ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 29px;
+}
+
+.divider ul li section {
+    margin-right: 10px;
+}
+
+.divider ul li i {
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.divider ul li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider ul li div div {
+    line-height: 1.2;
 }
