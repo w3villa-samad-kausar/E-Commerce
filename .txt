@@ -1,0 +1,7 @@
+read bootstrap
+
+implement these
+mail
+phone
+skype
+whatsapp

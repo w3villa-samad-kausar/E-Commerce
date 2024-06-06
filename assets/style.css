@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: white;
     font-family: "Roboto", sans-serif;
 }
 :root{
@@ -53,7 +53,9 @@ header .topheader ul li{
 header .topheader ul li a{
     text-decoration: none;
 }
-
+.midheader{
+    background-color: lightgray;
+}
 header .midheader .midHead_auth{
     margin: 0;
     padding: 0;
@@ -209,12 +211,12 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     display: flex;
     align-items: center;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .divider ul {
     display: flex;
     list-style-type: none;
-    padding: 250px;
     margin: 0;
     width: 100%;
     justify-content: space-between;
@@ -242,4 +244,111 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 
 .divider ul li div div {
     line-height: 1.2;
+}
+.why{
+    margin-top: 50px;
+}
+.custom-hr{
+    width: 50px;
+    border: none;
+    border-top: 2px solid red;
+}
+.text{
+    margin-top: 20px;
+    color: grey;
+    margin-left: 40px;
+    text-align: center;
+}
+.button-group{
+    margin-top: 40px;    
+}
+.d-setBetween-button{
+    text-align: center; 
+}
+.d-setBetween-button ul{
+    border: none;
+}
+
+.d-setBetween-button ul li{
+    display: inline-block;
+    padding: 10px;
+    background-color: lightgray;
+    color: gray;
+    transition: background-color 0.3s ease;
+}
+
+.d-setBetween-button ul li:hover{
+    background-color: blue;
+    color: white;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.d-setBetween-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.d-setBetween-gallery li {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* Add margin to space out the images */
+}
+
+.d-setBetween-gallery li img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.d-setBetween-gallery li div {
+    background: white;
+}
+
+.featured{
+    margin-top: 40px;
+    background-color: lightgray;
+    
+}
+.featured-header{
+    padding: 10px;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headphones{
+    width: 23%;
+}
+.brand{
+    background-color: grey;
+    height: 30px;
+    
+}
+.brand ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
