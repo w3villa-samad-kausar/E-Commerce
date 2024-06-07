@@ -220,6 +220,7 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     margin: 0;
     width: 100%;
     justify-content: space-between;
+    padding: 0px;
 }
 
 .divider ul li {
@@ -247,6 +248,15 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 }
 .why{
     margin-top: 50px;
+}
+.line{
+    margin-top: -25px;
+}
+.line1{
+    margin-top: -10px;
+}
+.line2{
+    margin-left: 0px;
 }
 .custom-hr{
     width: 50px;
@@ -323,6 +333,7 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 }
 
 .featured{
+    height: 750px;
     margin-top: 40px;
     background-color: lightgray;
     
@@ -331,12 +342,15 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     padding: 10px;
 }
 .products{
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
-.headphones{
+.product{
     width: 23%;
+    
 }
 .brand{
     background-color: grey;
@@ -351,4 +365,157 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+.actionsOnProduct{
+    display: flex;
+    justify-content: space-between;
+}
+.actionsOnProduct .quantity{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+.actionsOnProduct .quantity li{
+    padding: 2px;
+}
+.actionsOnProduct .wishlist-return{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: space-between;
+}
+.actionsOnProduct .wishlist-return li{
+    padding-inline: 10px;
+}
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button {
+    opacity: 1;
+    margin: 0;
+}
+
+.buy-question{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seeAllProducts{
+    margin-top: 50px;
+}
+.seeAllProducts button{
+    background-color: blue;
+    color: white;
+}
+
+.featured-categories{
+    height: 600px;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+.subcategories ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.category{
+    display: flex;
+}
+.brands ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+.improvedGallery{
+    background-color: gray;
+}
+.impressions ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.peopleopinion{
+    margin-top: 50px;
+}
+.reviewer{
+    margin-top: 50px;
+}
+.mostViewed{
+    margin-top: 50px;
+    background-color: gray;
+    padding-top: 30px;
+    height: 150px;
+}
+.mostViewedProducts{
+    display: flex;
+    justify-content: space-between;
+}
+.mostViewedProduct{
+    display: flex;
+    background-color: white;
+    width: 23%;
+}
+.mostViewedProductImage{
+    padding-inline: 10px;
+}
+.mostViewedProductImage img{
+    height: 70px;
+    width: auto;
+}
+.mostViewedProductActions ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+}
+.socials{
+    height: 40px;
+}
+.socialIcons ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.socialIcons ul li{
+    padding-inline: 20px;
+}
+.footer{
+    margin-top: 50px;
+
+}
+.footerSections{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.aboutUs{
+    width: 23%;
+}
+.aboutUs ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.aboutUs ul li{
+    padding-bottom: 10px;
+}
+.bottomfooter{
+    background-color: blue;
+    margin-top: 30px;
+}
+.bottomfooterElements{
+    display: flex;
+    justify-content: space-between;
+}
+.bottomfooterElements .copyright{
+    margin-top: 20px;
+    color: white;
+}
+.payments ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+.payments ul li{
+    padding-inline: 10px;
+}
+.payments ul img{
+    width: 60px;
+    height: 40px;
 }
