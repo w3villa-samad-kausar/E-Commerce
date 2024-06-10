@@ -1,105 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: white;
-    font-family: "Roboto", sans-serif;
+    background-color: rgb(248, 247, 247);
+    font-family: "Poppins", sans-serif;
 }
-:root{
+
+:root {
     --bg-primary: #2651d6;
     --bg-secondary: #fdd32f;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1140px;
     margin: auto;
 }
-.d-setBetween{
+
+.d-setBetween {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.gap-1{
+
+.gap-1 {
     gap: 10px;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: var(--bg-secondary);
 }
-.text-white{
+
+.text-white {
     color: white;
 }
 
 /* header */
 
-header .topheader{
+header .topheader {
     background-color: white;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
-header .topheader ul{
+header .topheader ul {
     padding: 0;
     margin: 0;
 }
 
-header .topheader ul li{
+header .topheader ul li {
     display: inline-block;
     list-style-type: none;
     padding: 5px;
+    color: gray;
 }
 
-header .topheader ul li a{
+header .topheader ul li a {
     text-decoration: none;
+    color: gray;
 }
+
+/* Dropdown styling */
+header .topheader ul li select {
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .topheader ul li select option {
+    background-color: white;
+    color: gray;
+}
+
+header .topheader ul li select option:before {
+    margin-right: 10px;
+}
+
+/* Styling for dropdown icons within the options */
+header .topheader ul li select option[value=""]::before {
+    content: '\f0ac'; /* Font Awesome icon for globe */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="USD"]::before {
+    content: '\f155'; /* Font Awesome icon for dollar */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="EUR"]::before {
+    content: '\f153'; /* Font Awesome icon for euro */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="INR"]::before {
+    content: '\f156'; /* Font Awesome icon for rupee */
+    font-family: FontAwesome;
+}
+
 .midheader{
-    background-color: lightgray;
+    background-color: rgb(236, 238, 240);
 }
-header .midheader .midHead_auth{
+.logo{
+    margin: 0px;
+    padding: 0px;
+}
+.logo img{
+    height: 55px;
+    width: auto;
+}
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.Search span {
+    display: flex;
+    align-items: center;
+}
+
+.Search select {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Search input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--bg-primary);
+    border-left: none;
+    outline: none;
+    flex-grow: 1;
+    width: 250px;
+}
+
+.Search button {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Search button i {
+    font-size: 16px;
+}
+header .midheader .midHead_auth {
     margin: 0;
     padding: 0;
 }
 
-header .midheader .midHead_auth li{
+header .midheader .midHead_auth li {
     list-style-type: none;
-    width: 60px;
+    width: 50px;
     text-align: center;
 }
-header .midheader .midHead_auth li a{
-    text-decoration: none;
-    color: #111;
 
+header .midheader .midHead_auth li a {
+    text-decoration: none;
+    color: gray;
 }
-header .mideheader .midHead_auth li a i.fa{
+
+header .midheader .midHead_auth li a i.fa {
     font-size: 24px;
 }
 
-header .bottomheader{
+header .midheader .midHead_auth li a div:last-child {
+    font-size: 12px;
+    color: gray;
+}
+
+.cart_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+#cartButton {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#cartButton i {
+    font-size: 20px;
+}
+
+header .bottomheader {
     background-color: var(--bg-primary);
     color: white;
 }
-header .bottomheader .bottomHead_inButton{
+
+header .bottomheader .bottomHead_inButton {
     display: inline-block;
     padding: 10px 14px;
     color: black;
     background-color: var(--bg-secondary);
+    font-size: 14px;
 }
-header .bottomheader .bottomHead_menus{
+
+header .bottomheader .bottomHead_menus {
     padding: 0;
     margin: 0;
 }
-header .bottomheader .bottomHead_menus li{
+
+header .bottomheader .bottomHead_menus li {
     list-style-type: none;
     margin: 0 3px;
+    font-size: 14px;
+    position: relative; /* Needed for labels */
 }
-header .bottomheader .bottomHead_menus li a{
+
+header .bottomheader .bottomHead_menus li a {
     text-decoration: none;
     display: inline-block;
     padding: 5px;
     color: white;
-    
 }
+
+.header .bottomheader .bottomHead_inButton span.ml-10 {
+    margin-left: 10px;
+}
+.sale-label {
+    position: absolute;
+    top: 120px;
+    left: 25%;
+    transform: translateX(-80%);
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.new-label {
+    position: absolute;
+    top: -15px; /* Adjusted to -15px */
+    right: 0;
+    background-color: var(--bg-secondary);
+    color: black;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
+header .bottomheader .d-setBetween .gap-1 > div {
+    margin-left: 10px; /* Adjust gap between phone and blog */
+}
+header .bottomheader .bottomHead_inButton {
+    display: inline-block;
+    padding: 10px 14px;
+    color: black;
+    background-color: var(--bg-secondary);
+    font-size: 14px;
+}
+
+header .bottomheader .bottomHead_inButton a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Adjust text color */
+}
+
+header .bottomheader .fa-blog {
+    margin-right: 5px; /* Adjust gap between icon and text */
+    font-size: 18px; /* Increase icon size */
+}
+
 .topimages{
     padding: 10px;
 }
@@ -117,26 +303,37 @@ header .bottomheader .bottomHead_menus li a{
 .carousel-item{
     width: 100%;
     flex: 1 0 100%;
-}
+    position: relative;
+} 
+
 
 .carousel-item img {
     width: 800px;
     display: block;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
   }
 
   .on-image{
     position: absolute;
-    z-index: 101;
-
   }
   .on-image ul{
-    margin-top: 200px;
+    margin-top: 60px;
     list-style-type: none;
-
   }
-  .on-image ul li{
+
+  .on-image ul li #btn1{
+    background-color: var(--bg-primary);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+  }
+  .on-image ul li #btn2{
+    background-color: transparent;
+    font-size: 20px;
+    color: gray;
+    border-color: gray;
     padding: 10px;
   }
 
@@ -195,19 +392,20 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
   }
   .watch img{
     width: 300px;
-    height: 236px;
+    height: auto;
     border-radius: 20px;
     padding-bottom: 10px;
   }
   .computer img{
     width: 300px;
-    height: 250px;
+    height: auto;
     border-radius: 20px;
-    
   }
+
+
   .divider {
     height: 100px;
-    background-color: grey;
+    background-color:rgba(58,71,84,1);
     display: flex;
     align-items: center;
     padding: 20px;
@@ -226,28 +424,39 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 .divider ul li {
     display: flex;
     align-items: center;
-    padding: 0 29px;
+    padding: 0 15px;
 }
 
 .divider ul li section {
     margin-right: 10px;
+    color: rgb(255, 72, 0);
 }
 
 .divider ul li i {
-    font-size: 48px;
+    font-size: 35px;
     margin-right: 10px;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50%;
+    border-color: var(--bg-primary);
 }
 
-.divider ul li div {
+.divider ul li .texts .top_text{
     display: flex;
     flex-direction: column;
+    font-size: 20px;
+    color: white;
 }
 
-.divider ul li div div {
-    line-height: 1.2;
+.bottom-text {
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
 }
 .why{
     margin-top: 50px;
+    font-size: 25px;
 }
 .line{
     margin-top: -25px;
@@ -268,6 +477,7 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     color: grey;
     margin-left: 40px;
     text-align: center;
+    font-size: 18px;
 }
 .button-group{
     margin-top: 40px;    
@@ -333,13 +543,14 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 }
 
 .featured{
-    height: 750px;
+    height: 950px;
     margin-top: 40px;
-    background-color: lightgray;
+    background-color: rgb(240, 244, 245);
     
 }
 .featured-header{
     padding: 10px;
+    font-size: 25px;
 }
 .products{
     margin-top: 50px;
@@ -350,11 +561,17 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 }
 .product{
     width: 23%;
+    border: 2px solid #e8eaf0;
+    border-radius: 2px;
     
 }
+.product img{
+    width: 260px;
+    height: auto;
+}
 .brand{
-    background-color: grey;
-    height: 30px;
+    background-color: rgb(208, 212, 224);
+    padding: 1px;
     
 }
 .brand ul{
@@ -362,9 +579,15 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    padding-top: 10px;
+    
     padding-left: 10px;
     padding-right: 10px;
+}
+.productInfo{
+    margin-left: 5px;
+}
+.productInfo .productName{
+    font-weight: 600;
 }
 .actionsOnProduct{
     display: flex;
@@ -377,6 +600,17 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 }
 .actionsOnProduct .quantity li{
     padding: 2px;
+
+}
+.actionsOnProduct .quantity li input{
+    height: 29px;
+}
+.actionsOnProduct .quantity li button{
+    color: white;
+    background-color: var(--bg-primary);
+    border: none;
+    padding: 10px;
+    font-size: 12px;
 }
 .actionsOnProduct .wishlist-return{
     display: flex;
@@ -396,20 +630,67 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 .buy-question{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(208, 212, 224);
+    font-size: 12px;
+    padding: 10px;
+    padding-inline: 10px;
+    
 }
 
 .seeAllProducts{
     margin-top: 50px;
+    border: none;
+    color: white;
+    
 }
 .seeAllProducts button{
-    background-color: blue;
+    background-color: var(--bg-primary);
     color: white;
+    border: none;
+    height: 40px;
+    padding: 10px;
 }
 
 .featured-categories{
-    height: 600px;
-    background-color: lightblue;
+    height: 800px;
+    background-color: rgb(236, 251, 255);
     margin-top: 50px;
+}
+.category{
+    margin-top: 40px;
+}
+.fashion{
+    font-weight: 500;
+    background-color: lightgray;
+    padding: 15px;
+    width: 350px;
+}
+.fashion img{
+    width: 250px;
+    height: auto;
+    padding-top: 10px;
+}
+.newInFashion{
+    width: 1100px;
+    padding: 20px;
+    background-color: white;
+}
+.newInFashion img{
+    width: 200px;
+    height: auto;
+}
+.newInFashion .products{
+    margin-top: 11px;
+    padding-inline: 20px;
+}
+.newInFashion .product{
+    width: 200px;
+    padding: 20px;
+    height: 350px;
+}
+.line2 hr{
+    margin-left: 0px;
+    margin-top: 5px;
 }
 .subcategories ul{
     list-style-type: none;
@@ -418,13 +699,33 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 .category{
     display: flex;
 }
+.shopByBrand{
+    background-color: white;
+    height: 300px;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+}
 .brands ul{
     display: flex;
     list-style-type: none;
-    padding: 0px;
+    padding-inline: 20px;
+    justify-content: space-between;
+}
+.brands ul li{
+    border: 2px solid #e8eaf0;
+    border-radius: 5%;
+    margin-right: 50px;
+}
+.brands ul li img{
+    width: 100px;
+    height: auto;
 }
 .improvedGallery{
-    background-color: gray;
+    background-color:rgba(58,71,84,1);
+    color: white;
+    height: 400px;
 }
 .impressions ul{
     display: flex;

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 247, 247);
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-primary: #2651d6;
+    --bg-secondary: #fdd32f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 247, 247);
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-primary: #2651d6;
+    --bg-secondary: #fdd32f;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.d-setBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 10px;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.text-white {
+    color: white;
+}
+
+/* header */
+
+header .topheader {
+    background-color: white;
+    padding: 10px 0;
+}
+
+header .topheader ul {
+    padding: 0;
+    margin: 0;
+}
+
+header .topheader ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    color: gray;
+}
+
+header .topheader ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* Dropdown styling */
+header .topheader ul li select {
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .topheader ul li select option {
+    background-color: white;
+    color: gray;
+}
+
+/* Midheader */
+header .midheader .midHead_auth {
+    margin: 0;
+    padding: 0;
+}
+
+header .midheader .midHead_auth li {
+    list-style-type: none;
+    width: 60px;
+    text-align: center;
+}
+
+header .midheader .midHead_auth li a {
+    text-decoration: none;
+    color: gray;
+}
+
+header .midheader .midHead_auth li a i.fa {
+    font-size: 24px;
+}
+
+header .midheader .midHead_auth li a div:last-child {
+    font-size: 12px;
+    color: gray;
+}
+
+.cart_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cartButton {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#cartButton i {
+    font-size: 20px;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="./assets/style.css">
+
+<title>Ecommerce</title>
+
+<header>
+    <div class="topheader">
+        <div class="wrapper">
+            <div class="d-setBetween gap-1">
+                <ul>
+                    <li><i class="fa fa-home"></i><a href=""> Home</a></li>
+                    <li><i class="fa fa-user"></i><a href=""> About Us</a></li>
+                    <li><i class="fa fa-envelope"></i><a href=""> Contact</a></li>
+                    <li><i class="fa fa-question"></i><select name="" id=""><option value="" selected> FAQ</option></select></li>
+                </ul>
+                <ul>
+                    <li>
+                        <select name="language" id="language">
+                            <option value="en" selected>🇬🇧 English</option>
+                            <option value="fr">🇫🇷 French</option>
+                            <option value="hi">🇮🇳 Hindi</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="currency" id="currency">
+                            <option value="USD" selected>USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="INR">INR (₹)</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul>
+                    <li><i class="fa fa-bars"></i><a href=""> More Menus's</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href=""> Delivery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="midheader">
+    <div class="wrapper">
+        <div class="d-setBetween">
+            <div class="logo">
+                <img src="./assets/journal.png" alt="">
+            </div>
+            <div class="Search">
+                <span>
+                    <select name="All" id="category">
+                        <option value="all">All</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="tech">Tech</option>
+                        <option value="home">Home</option>
+                        <option value="beauty">Beauty</option>
+                    </select>
+                </span>
+                <input type="text" placeholder="Search">
+                <span>
+                    <button id="searchButton"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+            
+            <div>
+                <ul class="d-setBetween midHead_auth">
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-sign-in"></i></div>
+                            <div>Login</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-user-plus"></i></div>
+                            <div>Register</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-heart"></i></div>
+                            <div>Wishlist</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><i class="fa fa-exchange"></i></div>
+                            <div>Compare</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="d-setBetween cart_info">
+                    <div>0 items - $0</div>
+                    <div><button id="cartButton"><i class="fa fa-shopping-cart"></i></button></div>
+                </div>
+            </div>
+            
+    </div>
+    </div>
+</div>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 247, 247);
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-primary: #2651d6;
+    --bg-secondary: #fdd32f;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.d-setBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 10px;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.text-white {
+    color: white;
+}
+
+/* header */
+
+header .topheader {
+    background-color: white;
+    padding: 10px 0;
+}
+
+header .topheader ul {
+    padding: 0;
+    margin: 0;
+}
+
+header .topheader ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    color: gray;
+}
+
+header .topheader ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* Dropdown styling */
+header .topheader ul li select {
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .topheader ul li select option {
+    background-color: white;
+    color: gray;
+}
+
+header .topheader ul li select option:before {
+    margin-right: 10px;
+}
+
+/* Styling for dropdown icons within the options */
+header .topheader ul li select option[value=""]::before {
+    content: '\f0ac'; /* Font Awesome icon for globe */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="USD"]::before {
+    content: '\f155'; /* Font Awesome icon for dollar */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="EUR"]::before {
+    content: '\f153'; /* Font Awesome icon for euro */
+    font-family: FontAwesome;
+}
+
+header .topheader ul li select option[value="INR"]::before {
+    content: '\f156'; /* Font Awesome icon for rupee */
+    font-family: FontAwesome;
+}
+
+.midheader{
+    background-color: rgb(236, 238, 240);
+}
+.logo{
+    margin: 0px;
+    padding: 0px;
+}
+.logo img{
+    height: 55px;
+    width: auto;
+}
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.Search span {
+    display: flex;
+    align-items: center;
+}
+
+.Search select {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Search input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--bg-primary);
+    border-left: none;
+    outline: none;
+    flex-grow: 1;
+    width: 250px;
+}
+
+.Search button {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Search button i {
+    font-size: 16px;
+}
+header .midheader .midHead_auth {
+    margin: 0;
+    padding: 0;
+}
+
+header .midheader .midHead_auth li {
+    list-style-type: none;
+    width: 60px;
+    text-align: center;
+}
+
+header .midheader .midHead_auth li a {
+    text-decoration: none;
+    color: gray;
+}
+
+header .midheader .midHead_auth li a i.fa {
+    font-size: 24px;
+}
+
+header .midheader .midHead_auth li a div:last-child {
+    font-size: 12px;
+    color: gray;
+}
+
+.cart_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cartButton {
+    background-color: var(--bg-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#cartButton i {
+    font-size: 20px;
+}
