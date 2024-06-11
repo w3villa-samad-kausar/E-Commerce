@@ -727,38 +727,83 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     color: white;
     height: 400px;
 }
+.fromOurBlog{
+    background-color: #e8eaf0;
+    height: 850px;
+}
+.impressions{
+    position: absolute;
+    margin-top: -46px;
+    background-color: #e8eaf0;
+    width: 340px;
+    height: 40px;
+    opacity: 0.8;
+}
 .impressions ul{
+    padding: 0px;
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
-.peopleopinion{
-    margin-top: 50px;
+
+.blogs{
+    border-radius: 2px;
+    margin-left: 15px;
+    
+    
+}
+.blogs img {
+    width: 340px;
+    height: auto;
+    border-top-left-radius: 10px; /* Adjust the radius value as needed */
+    border-top-right-radius: 10px; /* Adjust the radius value as needed */
+}
+
+.blogElements {
+    background-color: white;
+    width: 320px;
+    margin-top: -25px;
+    height: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-left-radius: 10px; /* Adjust the radius value as needed */
+    border-bottom-right-radius: 10px; /* Adjust the radius value as needed */
+}
+.blogText{
+    text-align: center;
+}
+
+.peopleOpinion{
+
+    background-color: white;
 }
 .reviewer{
     margin-top: 50px;
 }
 .mostViewed{
-    margin-top: 50px;
-    background-color: gray;
+    background-color:rgba(58,71,84,1);
     padding-top: 30px;
-    height: 150px;
+    height: 200px;
 }
 .mostViewedProducts{
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .mostViewedProduct{
     display: flex;
     background-color: white;
     width: 23%;
+    font-size: 14px;
 }
 .mostViewedProductImage{
     padding-inline: 10px;
 }
 .mostViewedProductImage img{
-    height: 70px;
+    height: 100px;
     width: auto;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 .mostViewedProductActions ul{
     display: flex;
@@ -767,38 +812,74 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     padding: 0px;
 }
 .socials{
-    height: 40px;
+    margin-top: -20px;
+    height: 70px;
+    background-color: #e8eaf0;
+    padding-top: 30px;
 }
 .socialIcons ul{
+    padding: 0px;
     display: flex;
     list-style-type: none;
     justify-content: center;
+    margin-top: -15px;
+    
 }
-.socialIcons ul li{
-    padding-inline: 20px;
+.socialIcons ul li {
+    padding-right: 20px;
+    
 }
-.footer{
-    margin-top: 50px;
+.socialIcons ul li i {
+    
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: #2651d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;  /* Adjust width */
+    height: 40px; /* Adjust height */
+    padding: 10px; /* Optional, adjust if necessary */
+}
 
+.footer{
+    height: 250px;
+    padding-top: 30px;
+    background-color: white;
 }
 .footerSections{
     display: flex;
-    
     justify-content: space-between;
 }
 .aboutUs{
     width: 23%;
+    border-right: 2px solid #e8eaf0;
 }
-.aboutUs ul{
+.aboutUs-n{
+    width: 23%;
+}
+.aboutUs ul ,.aboutUs-n ul{
     list-style-type: none;
     padding: 0px;
+    
 }
-.aboutUs ul li{
+.aboutUs ul li,.aboutUs-n ul li{
     padding-bottom: 10px;
 }
+.aboutUs ul li a{
+    text-decoration: none;
+    color: #2651d6;
+}
+.aboutUs-n button{
+    color: white;
+    background-color: #2651d6;
+    border: none;
+    font-size: 14px;
+    padding: 3px;
+}
 .bottomfooter{
-    background-color: blue;
-    margin-top: 30px;
+    background-color:rgba(58,71,84,1);
 }
 .bottomfooterElements{
     display: flex;
