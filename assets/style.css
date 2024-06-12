@@ -501,7 +501,6 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     background-color: blue;
     color: white;
 }
-
 .gallery {
     margin-top: 40px;
 }
@@ -541,7 +540,6 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 .d-setBetween-gallery li div {
     background: white;
 }
-
 .featured{
     height: 950px;
     margin-top: 40px;
@@ -907,6 +905,7 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
 @media (max-width: 768px) {
     /* For tablets: */
     
+    
     .responsiveElements{
         display: flex;
         align-items: center;
@@ -1004,6 +1003,10 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
    .watch img, .computer img{
     display: none;
    }
+   .divider .d-setBetween{
+    padding: 0px;
+    margin-left: -50px;
+   }
    .divider ul li .texts .top_text{
     font-size: 16px;
     }
@@ -1014,8 +1017,14 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     .divider i{
         display: none;
     }
-
-
+    .text{
+        font-size: 14px;
+    }
+    .d-setBetween-gallery{
+        display: grid;
+        grid: 100px/auto auto auto ;
+        grid-gap: 10px;
+    }
 
 }
 @media (min-width: 769px){
