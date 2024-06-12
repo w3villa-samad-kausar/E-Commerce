@@ -901,3 +901,136 @@ input#slide3:checked ~ .carousel-controls label[for="slide3"] {
     width: 60px;
     height: 40px;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+    /* For tablets: */
+    
+    .responsiveElements{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        
+    }
+    .hamburger , .searchIcon , .shoppingCartIcon{
+        display: block;
+        padding-inline: 15px;
+    }
+    .hamburger i, .searchIcon i, .shoppingCartIcon i{
+        font-size: 25px;
+    }
+    
+    header .topheader{
+        background-color: var(--bg-primary);
+    }
+    .topHeaderMenu{
+        color: white;
+        padding-left: 10px;
+    }
+   .topheader .wrapper .d-setBetween .firstUL {
+    display: none;
+   }
+   .topheader .wrapper .d-setBetween .secondUL{
+    margin-left: auto;
+   }
+   .topheader .wrapper .d-setBetween .thirdUL {
+    display: none;
+   }
+   .midheader{
+    background-color: white;
+   }
+   .midheader .wrapper .Search{
+    display: none;
+   }
+   .midheader .wrapper .d-setBetween .midHead_auth {
+    display: none;
+   }
+   .midheader .wrapper .d-setBetween .cart_info {
+    display: none;
+   }
+   .bottomheader{
+    display: none;
+   }
+
+   .topimages .d-setBetween {
+    padding-inline: 20px;
+    display: flex;
+    justify-content: start;
+   }
+   .carousel, .carousel-inner, .carousel-item{
+    height: 380px;
+    max-width: 500px;
+   }
+   .topimages{
+    max-width: 760px;
+    height: 250px; 
+   }
+   
+   .on-image{
+    font-size: 14px;;
+   }
+   .on-image #btn2{
+    display: none;
+   }
+   
+    .on-image h1{
+    font-size: 14px;
+   }
+   .on-image ul{
+    margin-top: 15px;
+    margin-left: 10px;
+   }
+   .carousel-item img{
+    height: auto;
+    max-width: 450px;
+   }
+   .carousel-controls{
+    display: none;
+   }
+   .carousel-inner{
+    animation: slide 21s infinite;
+   }
+  
+   .others {
+    margin-top: -150px;
+    margin-left: -30px;
+    width: 200px;
+   }
+   .others .on-image{
+    position: relative;
+   }
+   
+   .watch img, .computer img{
+    display: none;
+   }
+   .divider ul li .texts .top_text{
+    font-size: 16px;
+    }
+    .divider ul li .texts .bottom-text{
+        font-size: 12px;
+    }
+
+    .divider i{
+        display: none;
+    }
+
+
+
+}
+@media (min-width: 769px){
+    .topHeaderMenu{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .searchIcon{
+        display: none;
+    }
+    .shoppingCartIcon{
+        display: none;
+
+    }
+
+}

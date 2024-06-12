@@ -18,13 +18,14 @@
     <div class="topheader">
         <div class="wrapper">
             <div class="d-setBetween gap-1">
-                <ul>
+                <ul class="firstUL">
                     <li><i class="fa fa-home"></i><a href=""> Home</a></li>
                     <li><i class="fa fa-user"></i><a href=""> About Us</a></li>
                     <li><i class="fa fa-envelope"></i><a href=""> Contact</a></li>
                     <li><i class="fa fa-question"></i><select name="" id=""><option value="" selected> FAQ</option></select></li>
                 </ul>
-                <ul>
+                <div class="topHeaderMenu"><i class="fa fa-bars"></i></div>
+                <ul class="secondUL">
                     <li>
                         <select name="language" id="language">
                             <option value="en" selected>🇬🇧 English</option>
@@ -40,7 +41,7 @@
                         </select>
                     </li>
                 </ul>
-                <ul>
+                <ul class="thirdUL">
                     <li><i class="fa fa-bars"></i><a href=""> More Menus's</a></li>
                     <li><i class="fa fa-shopping-cart"></i><a href=""> Delivery</a></li>
                 </ul>
@@ -52,6 +53,11 @@
         <div class="d-setBetween">
             <div class="logo">
                 <img src="./assets/journal.png" alt="">
+            </div>
+            <div class="responsiveElements">
+            <div class="hamburger"><i class="fa fa-bars"></i></div>
+            <div class="searchIcon"><i class="fa fa-search"></i></div>
+            <div class="shoppingCartIcon"><i class="fa fa-shopping-cart"></i></div>
             </div>
             <div class="Search">
                 <span>
@@ -161,9 +167,9 @@
                 <div class="carousel-item ">
                     <div class="on-image">
                         <ul>
-                            <li><button id="btn1">Mobile</button></li>
+                            <li><button id="btn1" class="onImageButton">Mobile</button></li>
                             <li><h1>Sound that goes<br> straight to your heart</h1></li>
-                            <li><button id="btn2">Learn More-></button></li>
+                            <li><button id="btn2" class="onImageButton">Learn More-></button></li>
                         </ul>
                     </div>
                     <img src="./assets/journal_carousel2.png" alt="Image2">
